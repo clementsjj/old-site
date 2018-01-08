@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Setup</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS: You can use this stylesheet to override any Bootstrap styles and/or apply your own styles -->
+    <link href="css/custom.css" rel="stylesheet">
+    <style>
+  * {
+    box-sizing: border-box;
+  }
+   
+   body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: row;
+    margin: 0;
+  }
+  h1 {
+    height: 2vh;
+    width: 90vw;
+    color: black;
+  }
+  h2 {
+   color: black; 
+  }
+  .col-1 {
+    background: #D7E8D4;
+    flex: 1;
+  }
+  .col-2 {
+    display: flex;
+    flex-direction: column;
+    flex: 5;
+    color: black;
+  }
+  .content {
+    display: flex;
+    flex-direction: row;
+    background: lightblue;
+    color:black;
+  }
+  .content > article {
+    flex: 4;
+    min-height: 70vh;
+  }
+
+  header {
+    background: green;
+    height: 20vh;
+    padding: 0em;
+  }
+  footer{
+    background: green;
+    height: 10vh;
+  }
+  footer, article, nav {
+    padding: 1em;
+  }
+</style> </head>
+  <body>
+    <nav class="col-1"><u><b>Resources</b></u>
+      <ul>
+        <li><a href="#">Wireshark</a></li>
+        <li><a href="#">Nmap</a></li>
+        <li><a href="#">Web</a></li>
+        <li><a href="#">Hack</a></li>
+        <li><a href="#">Linux</a></li>
+        <li><a href="#">Networking</a></li>
+        <li><a href="#">Server Project</a></li>
+        <li><a href="#">Tails</a></li>
+      </ul>
+      <u><b>Other Topics</b></u>
+      <ul>
+        <li><a href="#">Games</a></li>
+        <li><a href="#">My Setup</a></li>
+        <li><a href="#">My Domains</a></li>
+        <li><a href="#">My NYC</a></li>
+      </ul>
+    </nav>
+    <div class="col-2">
+      <header>
+        <h1> <b>The Maximum Thrust-Reboot</b> </h1>
+      </header>
+      <main class="content">
+        <article>
+          <h2> Games </h2>
+          <h7 style="color:green;"> 31 October 2017 </h7>
+          <p> This page will reference games of drinking nature or otherwise. </p>
+          <ul>
+            <li>"I assume" Game</li>
+            <p> I learned this game in a hostel in Krakow, Poland. It was a
+              great icebreaker, and a good opportunity to drink. The rules are
+              simple. </p>
+            <p> Sit in a circle (with drinks). One person starts by calling out
+              another in the circle, and saying that they assume they did
+              something. For example:"I assume you have had a threesome." All
+              others decide if they agree or disagree. On the count of three,
+              those that agree give a thumbs up, those that don't agree give a
+              thumbs down. The person in question then provides the truth. Those
+              who were incorrect with their assumption then proceed to drink.
+              Everyone laughs and learns a little something new. </p>
+            <li>"Quarter on the Mat" Game</li>
+            <p>This is a game my brother learned while a camp counselor, and has since passed it on to me.  </p>
+            <li>"La Crosse"</li>
+          </ul>
+        </article>
+      </main>
+      <footer>Something will go here eventually.</footer>
+    </div>
+    
+  </body>
+</html>

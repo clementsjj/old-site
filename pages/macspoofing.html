@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The Second Maximum Thrust Reboot</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="main.css" rel="stylesheet">
+  </head>
+
+<!--Body-->
+
+  <body>
+
+   <div id="frames">
+    <nav id="col-1">
+      <u><b>Resources</b></u>
+        <ul>
+          <li><a href="#home" class="active">Home</a>
+          <li><a href="#">Wireshark</a></li>
+          <li><a href="#">Nmap</a></li>
+          <li><a href="#">Web</a></li>
+          <li><a href="#">Hack</a></li>
+          <li><a href="#">Linux</a></li>
+          <li><a href="#">Networking</a></li>
+          <li><a href="#">Server Project</a></li>
+          <li><a href="#">Tails</a></li>
+          <li><a href="#macspoofing" class="active">MAC Spoofing</a></li>
+        </ul>
+      <u><b>Other Topics</b></u>
+        <ul>
+          <li><a href="#">Games</a></li>
+          <li><a href="#">My Setup</a></li>
+          <li><a href="#">My Domains</a></li>
+          <li><a href="#">My NYC</a></li>
+        </ul>
+      </nav>
+
+      <div id="col-2">
+        <header>
+          <h1> <b>The Maximum Thrust-Reboot</b> </h1>
+        </header>
+        <main class="content">
+          <article>
+            <h2> MAC Spoofing. </h2>
+            <h7 style="color:green"> 15 December 2017 </h7>
+            <p> Here I am, sitting at Newark Airport while my flight is delayed an hour. Unfortunately, like most airports in the US, it costs money to surf. Or if you can connect for free, its only good for 30 or so minutes. As my time ran out, I was pretty bummed. Then the thought crossed my mind that perhaps I should try to spoof my MAC address. Well, it worked, and was very simple.</p>
+            <p> I will note that this is specific for Macintosh computers.</p>
+            <p>To see your current MAC address, type the following:</p>
+            <code>ifconfig en0 | grep ether </code>
+            <p>This assumes that en0 is your primary NIC. You can also just type ifconfig and scroll through until you find the necessary information.</p>
+            <p> Next, change it with this simple piece of code:</p>
+            <code>sudo ifconfig en0 ether 00:e2:e3:e4:e5:e6</code>
+            <p>This should be good until you restart your computer. Also, you should only change the last 3 sets</p>
+            <p> Ok, so that seems pretty great, and works well. How about my android phone?</p>
+            <p>Let's first download Terminal Emulator for Android from the play store.</p>
+            <p>Enter this code:</p>
+            <code>ip link show</code>
+            <p></p>
+            <code>ip link set AAAA address XX:XX:XX:YY:YY:YY</code>
+            <p>-or-</p>
+            <code>ip link set AAAA broadcast XX:XX:XX:YY:YY:YY</code>
+            <p>Enter this to double check that it has changed:</p>
+            <code>ip link show AAAA</code>
+            <p>AAAA = the interface that you wish to change</p>
+          </article>
+        </main>
+
+      </div>
+    </div>
+  </body>
+
+  <footer>Something will go here eventually. naaaah</footer>
+
+</html>

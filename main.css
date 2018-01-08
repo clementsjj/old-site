@@ -17,10 +17,8 @@ h1 {
 height: 2vh;
  color: black;
 }
-
 h2 {
-color: lime;
-}
+color: lime; }
 
 .button{
   margin-left: 0px;
